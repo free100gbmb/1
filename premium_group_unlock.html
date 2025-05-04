@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>গ্রুপ আনলক করুন</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .title {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-size: 18px;
+      color: #111;
+      font-weight: bold;
+      max-width: 650px;
+      margin: auto auto 30px auto;
+      line-height: 1.7;
+    }
+
+    .title a {
+      color: #d63384;
+      text-decoration: underline;
+    }
+
+    .task {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: none;
+    }
+
+    .task.active {
+      display: block;
+    }
+
+    .task img {
+      width: 50px;
+      margin-bottom: 12px;
+    }
+
+    .task h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .task button {
+      padding: 12px 28px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .task button:hover {
+      background-color: #e64a19;
+    }
+
+    .countdown {
+      margin-top: 12px;
+      font-weight: bold;
+      color: #009688;
+    }
+
+    .ads {
+      margin: 30px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Title with link -->
+  <div class="title">
+    প্রিমিয়াম গ্রুপ আনলক করতে হলে প্রথম বাটনটি ক্লিক করে 
+    <a href="https://www.profitableratecpm.com/mwj1d3wu?key=f5e0ec7f1424cc9d3da7774912df6795" target="_blank">⏳১০ সেকেন্ড অপেক্ষা করুন</a>, 
+    একইভাবে দ্বিতীয়টিও করুন। তারপর 🔙 Back এ ক্লিক করে আনলক করুন <br>
+    (⚠️⚠️ চালাকি করলে আনলক হবে না ভাইয়া ⚠️🙂)
+  </div>
+
+  <!-- Popunder Ads -->
+  <script type='text/javascript' src='//pl26552155.profitableratecpm.com/65/46/1f/65461f9b438a2e0faa7b4222297ddde0.js'></script>
+
+  <!-- Social Bar Ads -->
+  <script type='text/javascript' src='//pl26552166.profitableratecpm.com/3e/65/11/3e651100c3535569980734214d7384fc.js'></script>
+
+  <!-- Task 1 -->
+  <div class="task active" id="task1">
+    <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" alt="Lock">
+    <h3>Task 1</h3>
+    <button onclick="startCountdown(1, 'https://www.profitableratecpm.com/mwj1d3wu?key=f5e0ec7f1424cc9d3da7774912df6795')">Start Task 1</button>
+    <div id="countdown1" class="countdown"></div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="task" id="task2">
+    <img src="https://cdn-icons-png.flaticon.com/512/2913/2913468.png" alt="Lock">
+    <h3>Task 2</h3>
+    <button onclick="startCountdown(2, 'https://www.profitableratecpm.com/mwj1d3wu?key=f5e0ec7f1424cc9d3da7774912df6795')">Start Task 2</button>
+    <div id="countdown2" class="countdown"></div>
+  </div>
+
+  <!-- Task 3 -->
+  <div class="task" id="task3">
+    <img src="https://cdn-icons-png.flaticon.com/512/2913/2913458.png" alt="Lock">
+    <h3>Premium Group Unlock</h3>
+    <button onclick="startCountdown(3, 'https://t.me/+9s5G0t76pFBlYWI1')">Unlock Now</button>
+    <div id="countdown3" class="countdown"></div>
+  </div>
+
+  <!-- Native Banner Ads -->
+  <div class="ads">
+    <script async="async" data-cfasync="false" src="//pl26552163.profitableratecpm.com/db7d7495555c81fdeff8dfc3dfdcb955/invoke.js"></script>
+    <div id="container-db7d7495555c81fdeff8dfc3dfdcb955"></div>
+  </div>
+
+  <script>
+    function startCountdown(taskNum, url) {
+      const countdownElement = document.getElementById("countdown" + taskNum);
+      let timeLeft = 10;
+      countdownElement.innerText = `অনুগ্রহ করে অপেক্ষা করুন ${timeLeft} সেকেন্ড...`;
+
+      window.open(url, "_blank");
+
+      const interval = setInterval(() => {
+        timeLeft--;
+        countdownElement.innerText = `অনুগ্রহ করে অপেক্ষা করুন ${timeLeft} সেকেন্ড...`;
+
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          if (taskNum === 1) {
+            document.getElementById("task2").classList.add("active");
+          } else if (taskNum === 2) {
+            document.getElementById("task3").classList.add("active");
+          } else {
+            window.location.href = url;
+          }
+        }
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
